@@ -16,8 +16,8 @@ CSS Variables
     /* ------------------------------- Colors -----------------------------*/
     /* Base semantic palette */
      
-    --primary-color: #222222; /* Primary text color */
-    --primary-bg: #ffffff;   /* Primary background color */
+    --primary-color: #333333; /* Primary text color */
+    --primary-bg: #FFE5D4;   /* Primary background color */
     --secondary-color: #f8f7f7; /* Secondary/alternative text color */
     --secondary-bg: #135C52;   /* Secondary/alternative background color */
     --accent-color: #E45F2B;   /* Accent or brand color */
@@ -25,9 +25,9 @@ CSS Variables
 
 
     /* Link + Button specific tokens */
-    --link-color: #0b57d0; /* Primary link/action color */
-    --link-hover-color: #0945a6; /* Darker for hover/focus */
-    --link-visited-color: #5a35a6; /* Distinct visited state */
+    --link-color: #3875C9; /* Primary link/action color */
+    --link-hover-color: #276B7D; /* Darker for hover/focus */
+    --link-visited-color: #913D22; /* Distinct visited state */
     --button-bg: var(--link-color); /* Primary button color (matches link) */
     --button-hover-bg: var(--link-hover-color); /* Hover button color (matches link hover) */
     --button-text-color: #ffffff; /* Accessible contrast on button bg */
