@@ -140,7 +140,7 @@ html {
 
 body {
     font-family: var(--font-primary);
-    font-weight: false;
+    font-weight: 400;
     line-height: 1.65;
     font-size: var(--text-size-md);
 }
