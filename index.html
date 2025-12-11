@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
-    <title>Basic Responsive Page</title>
+    <title>Home Improv Guide</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,11 +13,25 @@
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-        <!-- add site wide header content here -->
+        <div class="topbar">
+            <a href="/" class="logo" aria-current="page">Improv Guide</a>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="forms.html">Forms of Improv</a></li>
+                <li><a href="musical.html">Musical Improv</a></li>
+                <li><a href="where.html">Where to Find Improv</a></li>
+                <li><a href="classes.html">Improv Classes</a></li>
+            </ul>
+        </nav><!-- add site wide header content here -->
     </header>
 
     <main id="main">
-       <h1>What is Improv Theater?</h1>>
+       <h1>What is Improv Theater?</h1>
     </main>
 
     <footer class="site-footer">

@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musical Improv Theater</title>
-  <link rel="stylesheet" href="css/base.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
+    <title>Musical Improv</title>
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- External stylesheet -->
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="topbar">
+            <a href="/" class="logo" aria-current="page">Improv Guide</a>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
 
-<header class="site-header">
-  <h1>Musical Improv Theater</h1>
-</header>
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="forms.html">Forms of Improv</a></li>
+                <li><a href="musical.html" aria-current="page">Musical Improv</a></li>
+                <li><a href="where.html">Where to Find Improv</a></li>
+                <li><a href="classes.html">Improv Classes</a></li>
+            </ul>
+        </nav><!-- add site wide header content here -->
+    </header>
 
-<main class="content">
+    <main id="main">
+       <h1>Musical Improv</h1>
 
   <p>
     In musical improv theater, performers, well, improvise a musical.
