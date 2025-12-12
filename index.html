@@ -12,6 +12,8 @@
 
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header / Navigation -->
     <header class="site-header">
         <div class="topbar">
             <a href="/" class="logo" aria-current="page">Improv Guide</a>
@@ -27,48 +29,58 @@
                 <li><a href="where.html">Where to Find Improv</a></li>
                 <li><a href="classes.html">Improv Classes</a></li>
             </ul>
-        </nav><!-- add site wide header content here -->
+        </nav>
     </header>
 
+    <!-- Main Content -->
     <main id="main">
-       <h1>What is Improv Theater?</h1>
-         <p>
-          “Improvisation Theater is the form of theatre, often comedy, in which most or all of what is performed is unplanned or unscripted, created spontaneously by the performer.”
-        </p>
+        <!-- Hero Section -->
+        <section>
+            <div class="container">
+                <h1>What is Improv Theater?</h1>
+                <p>
+                    “Improvisation Theater is the form of theatre, often comedy, in which most or all of what is performed is unplanned or unscripted, created spontaneously by the performer.”
+                </p>
 
-        <!-- Hero Image (Wikipedia CC) -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/69-04-culture-comedy-improv-AngelicaSchwartz2_1000_667_90.jpg" alt="Improv performers" style="max-width:900px;border-radius:8px;margin-top:20px;">
-        <p class="small">Source: <a href="https://en.wikipedia.org/wiki/File:69-04-culture-comedy-improv-AngelicaSchwartz2_1000_667_90.jpg" target="_blank" rel="noopener">Wikipedia — Creative Commons</a></p>
-      </div>
-    </section>
+                <!-- Hero Image -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/69-04-culture-comedy-improv-AngelicaSchwartz2_1000_667_90.jpg"
+                     alt="Improv performers" class="hero-img">
 
-    <section>
-      <div class="container">
-        <h2>Quick Overview</h2>
-        <p>Improvisational theatre (or improv) emphasizes collaboration, listening, and playful risk-taking.</p>
-<p>This site is intended to give you an introduction to types of improv, suggest places to see improv, and maybe even inspire you to try improv yourself! </p>
-      </div>
-    </section>
-  </main>
+                <p class="text-small">
+                    Source: <a href="https://en.wikipedia.org/wiki/File:69-04-culture-comedy-improv-AngelicaSchwartz2_1000_667_90.jpg"
+                               target="_blank" rel="noopener">Wikipedia — Creative Commons</a>
+                </p>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Improv Guide</p>
-    </div>
-  </footer>
+        <!-- Quick Overview Section -->
+        <section>
+            <div class="container">
+                <h2>Quick Overview</h2>
+                <p>Improvisational theatre (or improv) emphasizes collaboration, listening, and playful risk-taking.</p>
+                <p>This site is intended to give you an introduction to types of improv, suggest places to see improv, and maybe even inspire you to try improv yourself!</p>
+            </div>
+        </section>
+    </main>
 
-  <!-- Leave this as the last thing before the closing /body tag -->
-        <!-- jQuery via CDN with modern dynamic fallback -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
-        <script>
-            if (!window.jQuery) {
-                const fallback = document.createElement('script');
-                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
-                fallback.defer = true;
-                document.head.appendChild(fallback);
-            }
-        </script>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Improv Guide</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script>
+        if (!window.jQuery) {
+            const fallback = document.createElement('script');
+            fallback.src = 'js/vendor/jquery-3.7.1.min.js';
+            fallback.defer = true;
+            document.head.appendChild(fallback);
+        }
+    </script>
     <script src="js/main.js" defer></script>
 </body>
 </html>
-
