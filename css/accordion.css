@@ -1,0 +1,135 @@
+/* ACCORDION STYLES ============================= */
+
+/* Variables */
+:root {
+  /* Accordion — spacing mapped to the specific part they style */
+  --acc-accordion-margin: var(--spacing-lg);
+  --acc-button-padding: var(--spacing-md);
+  --acc-panel-padding: var(--spacing-md);
+  --acc-button-gap: var(--spacing-sm);
+
+  /* Accordion — typography */
+  --acc-accordion-font: var(--font-primary);
+  --acc-button-font: var(--font-heading);
+
+  /* Accordion — item / wrapper colors */
+  --acc-item-border-color: var(--secondary-color);
+  --acc-accordion-bg: var(--primary-bg);
+
+  /* Button-specific tokens (kept, but clearer) */
+  --acc-button-bg: var(--button-bg);
+  --acc-button-text-color: var(--button-text-color);
+  --acc-button-expanded-bg: var(--accent-color);
+  --acc-button-expanded-color: var(--primary-bg);
+  --acc-button-outline: var(--accent-color2);
+
+  /* Panel-specific tokens */
+  --acc-panel-color: var(--secondary-color);
+  --acc-panel-bg: var(--secondary-bg);
+  --acc-button-text-size: var(--text-size-lg);
+  --acc-panel-text-size: var(--text-size-md);
+  
+}
+
+/* Accordion wrapper */
+.accordion {
+  margin: var(--acc-accordion-margin) 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--acc-accordion-font);
+  border: 1px solid var(--acc-item-border-color);
+  border-radius: 4px;
+  background-color: var(--acc-accordion-bg);
+}
+
+/* Each accordion item */
+.accordion-item + .accordion-item {
+  border-top: 1px solid var(--acc-item-border-color);
+}
+
+/* Toggle button (header) */
+.accordion-toggle {
+  width: 100%;
+  text-align: left;
+  padding: var(--acc-button-padding);
+  font-size: var(--acc-button-text-size);
+  font-family: var(--acc-button-font);
+  background-color: var(--acc-button-bg);
+  color: var(--acc-button-text-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--acc-button-gap);
+  cursor: pointer;
+}
+
+/* Hover / focus-visible states for better affordance */
+.accordion-toggle:hover {
+  background-color: var(--acc-button-expanded-bg);
+  color: var(--acc-button-expanded-color);
+}
+
+/* Keep focus very visible and not removed */
+.accordion-toggle:focus-visible {
+  outline: 3px solid var(--acc-button-outline);
+  outline-offset: 2px;
+}
+
+/* Expanded state (button has aria-expanded="true") */
+.accordion-toggle[aria-expanded="true"] {
+  background-color: var(--acc-button-expanded-bg);
+  color: var(--acc-button-expanded-color);
+}
+
+/* Optional: little "chevron" using text only (no extra markup needed) You can remove this if you prefer an actual icon. */
+.accordion-toggle::after {
+  content: "+";
+  font-size: var(--acc-button-text-size);
+}
+
+/* Rotate chevron when open */
+.accordion-toggle[aria-expanded="true"]::after {
+  content: "−";
+}
+
+/* Panel (content area) */
+.accordion-panel {
+  /* Panels are hidden by default; shown when the toggle's aria-expanded is true.
+     Keeping this explicit makes the component resilient to different JS behaviors. */
+  display: none;
+  padding: var(--acc-panel-padding);
+  font-size: var(--acc-panel-text-size);
+  line-height: 1.5;
+  background-color: var(--acc-panel-bg);
+  color: var(--acc-panel-color);
+}
+
+
+
+
+
+    /* Text sizes -----------
+  these are from the following page. You can go there, change the scale used and then copy and paste the CSS variables to replace these
+  https://baseline.is/tools/type-scale-generator/
+  Scale used below: 1.3333 - Perfect Fourth
+   */
+    --text-size-xs: 0.56rem;
+    --text-size-sm: 0.75rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.33rem;
+    --text-size-xl: 1.78rem;
+    --text-size-2xl: 2.37rem;
+    --text-size-3xl: 3.16rem;
+    --text-size-4xl: 4.21rem;
+    --text-size-5xl: 5.61rem;
+
+
+    /* ------------------------------- Spacing -----------------------------*/
+    /* this is calculated as multiples of the base font size */
+    --spacing-sm: calc(var(--font-size-base) * 0.5);
+    --spacing-md: calc(var(--font-size-base) * 1);
+    --spacing-lg: calc(var(--font-size-base) * 2);
+    --spacing-xl: calc(var(--font-size-base) * 3);
+    --spacing-2xl: calc(var(--font-size-base) * 4);
+} /* ------------------------------- END :ROOT ----------------------------- */ 

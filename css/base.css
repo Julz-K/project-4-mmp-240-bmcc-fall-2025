@@ -6,16 +6,16 @@ CSS Variables
 :root {
     /* ------------------------------- Colors -----------------------------*/
     --primary-color: #333333;      /* main text color */
-    --primary-bg: #FFE5D4;         /* main body background */
+    --primary-bg: #FF6F61;         /* main body background */
     --secondary-color: #f8f7f7;
     --secondary-bg: #135C52;
     --accent-color: #E45F2B;
     --accent-color2: #F6C445;
 
     /* Link + Button specific */
-    --link-color: #3875C9;
-    --link-hover-color: #276B7D;
-    --link-visited-color: #913D22;
+    --link-color: #103059;
+    --link-hover-color: #07342E;
+    --link-visited-color: #33235B;
     --button-bg: var(--link-color);
     --button-hover-bg: var(--link-hover-color);
     --button-text-color: #ffffff;
@@ -25,7 +25,7 @@ CSS Variables
 
     /* Header and Footer */
     --headerFooter-color: #eee;
-    --headerFooter-bg: #333;
+    --headerFooter-bg: #FFD700;
 
     /* Navigation-specific colors */
     --clr-nav: var(--link-color);
