@@ -17,7 +17,6 @@
     <!-- Header / Navigation -->
     <header class="site-header">
         <div class="topbar">
-            <a href="/" class="logo" aria-current="page">Improv Guide</a>
             <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -25,10 +24,12 @@
 
         <nav aria-label="Primary">
             <ul id="menu" class="menu">
-                <li><a href="forms.html">Forms of Improv</a></li>
+              <li><a href="index.html" aria-current="page">Improv Guide</a></li>
+                <li><a href="forms.html">Improv Games</a></li>
                 <li><a href="musical.html">Musical Improv</a></li>
                 <li><a href="where.html">Where to Find Improv</a></li>
                 <li><a href="classes.html">Improv Classes</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
             </ul>
         </nav>
     </header>
@@ -63,92 +64,48 @@
             </div>
         </section>
         <h1>Some types of improv:</h1>
-<ul class="accordion">
-  <li class="accordion-item">
-    <button
-      class="accordion-toggle"
-      id="accordion-button-1"
-      aria-expanded="false"
-      aria-controls="accordion-panel-1"
-    >
-      Long form improv
-    </button>
-    <div
-      class="accordion-panel"
-      id="accordion-panel-1"
-      role="region"
-      aria-labelledby="accordion-button-1"
-    >
-      <p>Improv performers create shows or sets in which short scenes are often interrelated by story, characters, or themes.</p>
-
-    </div>
-  </li>
-    
-<li class="accordion-item">
-    <button
-      class="accordion-toggle"
-      id="accordion-button-2"
-      aria-expanded="false"
-      aria-controls="accordion-panel-2"
-    >
-      Short Form
-    </button>
-    <div
-      class="accordion-panel"
-      id="accordion-panel-2"
-      role="region"
-      aria-labelledby="accordion-button-2"
-    >
-      <p>improv that consists of short scenes usually constructed from a predetermined game, structure, or idea and driven by an audience suggestion.</p>
-    </div>
-  </li>
-
-  <li class="accordion-item">
-    <button
-      class="accordion-toggle"
-      id="accordion-button-3"
-      aria-expanded="false"
-      aria-controls="accordion-panel-3"
-    >
-      Improv Games
-    </button>
-    <div
-      class="accordion-panel"
-      id="accordion-panel-3"
-      role="region"
-      aria-labelledby="accordion-button-3"
-    >
-      <p>Like most games, people follow rules and have fun! Unlike many games, there often isn’t a clear winner.</p>
+<section>
+  <div class="container">
+    <ul class="accordion">
       <li class="accordion-item">
-    <button
-      class="accordion-toggle"
-      id="accordion-button-4"
-      aria-expanded="false"
-      aria-controls="accordion-panel-4"
-            >
-Musical Improv
-      </button>
-    <div
-      class="accordion-panel"
-      id="accordion-panel-3"
-      role="region"
-      aria-labelledby="accordion-button-3"
-    >
-      <p>In musical improv theater, performers, well, improvise a musical.
-        Every note and lyric is made up on the spot!</p
-      </div>
-
-  </li>
-</ul>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>© 2025 Improv Guide</p>
+        <button class="accordion-toggle" id="accordion-button-1" aria-expanded="false" aria-controls="accordion-panel-1">
+          Long form improv
+        </button>
+        <div class="accordion-panel" id="accordion-panel-1" role="region" aria-labelledby="accordion-button-1">
+          <p>Improv performers create shows or sets in which short scenes are often interrelated by story, characters, or themes.</p>
         </div>
-    </footer>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-toggle" id="accordion-button-2" aria-expanded="false" aria-controls="accordion-panel-2">
+          Short Form
+        </button>
+        <div class="accordion-panel" id="accordion-panel-2" role="region" aria-labelledby="accordion-button-2">
+          <p>Improv that consists of short scenes usually constructed from a predetermined game, structure, or idea and driven by an audience suggestion.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-toggle" id="accordion-button-3" aria-expanded="false" aria-controls="accordion-panel-3">
+          Improv Games
+        </button>
+        <div class="accordion-panel" id="accordion-panel-3" role="region" aria-labelledby="accordion-button-3">
+          <p>Like most games, people follow rules and have fun! Unlike many games, there often isn't a clear winner.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button class="accordion-toggle" id="accordion-button-4" aria-expanded="false" aria-controls="accordion-panel-4">
+          Musical Improv
+        </button>
+        <div class="accordion-panel" id="accordion-panel-4" role="region" aria-labelledby="accordion-button-4">
+          <p>In musical improv theater, performers, well, improvise a musical. Every note and lyric is made up on the spot!</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    </main>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

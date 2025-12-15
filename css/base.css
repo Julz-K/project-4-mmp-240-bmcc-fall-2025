@@ -6,7 +6,7 @@ CSS Variables
 :root {
     /* ------------------------------- Colors -----------------------------*/
     --primary-color: #333333;      /* main text color */
-    --primary-bg: #FF6F61;         /* main body background */
+    --primary-bg: #FFE5D4;         /* main body background */
     --secondary-color: #f8f7f7;
     --secondary-bg: #135C52;
     --accent-color: #E45F2B;
@@ -14,8 +14,8 @@ CSS Variables
 
     /* Link + Button specific */
     --link-color: #103059;
-    --link-hover-color: #07342E;
-    --link-visited-color: #33235B;
+    --link-hover-color: #276B7D;
+    --link-visited-color: #913D22;
     --button-bg: var(--link-color);
     --button-hover-bg: var(--link-hover-color);
     --button-text-color: #ffffff;
@@ -54,6 +54,10 @@ CSS Variables
     --spacing-lg: calc(var(--font-size-base) * 2);
     --spacing-xl: calc(var(--font-size-base) * 3);
     --spacing-2xl: calc(var(--font-size-base) * 4);
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* ==========================
@@ -65,6 +69,7 @@ Minimal Normalize
 
 body {
     margin: 0;
+    padding: 0;
     font-family: var(--font-primary);
     font-weight: 400;
     line-height: 1.65;
@@ -82,7 +87,9 @@ audio, canvas, iframe, img, svg, video { vertical-align: middle; }
 /* ==========================
 General Styles
 ========================== */
-html { font-size: var(--font-size-base); }
+html { font-size: var(--font-size-base); 
+margin: 0; padding: 0;
+}
 
 .skip-link {
     position: absolute;
