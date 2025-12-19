@@ -10,6 +10,52 @@ header {
   z-index: 10;
 }
 
+/* ==========================
+Responsive Video/Embed Styles
+========================== */
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* Video Embed (youtube or vimeo etc)
+   ----------------------------------
+   This CSS creates a responsive video embed container that maintains 
+   the aspect ratio of the video.
+   Use by wrapping your <iframe> embed code in a div with the class "videoWrapper" 
+   and an additional class indicating the aspect ratio, 
+   e.g., "ratio-16-9" or "ratio-4-3".
+   
+*/
+.videoWrapper {
+    position: relative;
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper.ratio-16-9 {
+    padding-bottom: 56.25%;
+    /* 16:9 */
+}
+
+.videoWrapper.ratio-4-3 {
+    padding-bottom: 75%;
+    /* 4:3 */
+}
+
+
+
 html {
   background: var(--primary-bg);
   margin: 0;
@@ -93,6 +139,41 @@ nav { background: var(--clr-nav-background); }
 
 @media (prefers-reduced-motion: reduce) {
   .menu { transition: none; }
+}
+
+/* Figure and Image Styles */
+figure {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+figure img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-img {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.hero-img-wrapper {
+  position: relative;
+  display: block;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.image-credit {
+  text-align: left;
+  margin: 0.5rem 0 0 0;
 }
 
 /* Desktop layout */
