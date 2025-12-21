@@ -248,3 +248,35 @@ figure img {
   }
   
 }
+
+  /* ==========================
+  Footer Styles
+  ========================== */
+  footer,
+  .site-footer {
+    background: #4D96FF;
+    margin: 0;
+    padding: 1rem;
+    color: #1E1E1E;
+    text-align: center;
+  }
+
+/* Match desktop header horizontal padding */
+@media (min-width: 1240px) {
+  footer,
+  .site-footer { padding: 1rem 1.5rem; }
+}
+
+/* ==========================
+About page: sticky footer
+Only affects aboutme.html via .page-about
+========================== */
+.page-about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-about main {
+  flex: 1;
+}
