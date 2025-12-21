@@ -280,3 +280,12 @@ Only affects aboutme.html via .page-about
 .page-about main {
   flex: 1;
 }
+
+/* ==========================
+Card Styles
+========================== */
+.card {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
