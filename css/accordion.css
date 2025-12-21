@@ -17,15 +17,15 @@
   --acc-accordion-bg: var(--primary-bg);
 
   /* Button-specific tokens (kept, but clearer) */
-  --acc-button-bg: var(--button-bg);
+  --acc-button-bg: var(--button-bg);x
   --acc-button-text-color: var(--button-text-color);
   --acc-button-expanded-bg: var(--accent-color);
-  --acc-button-expanded-color: var(--primary-bg);
+  --acc-button-expanded-color: #1E1E1E;
   --acc-button-outline: var(--accent-color2);
 
   /* Panel-specific tokens */
-  --acc-panel-color: var(--secondary-color);
-  --acc-panel-bg: var(--secondary-bg);
+  --acc-panel-color: #1E1E1E;
+  --acc-panel-bg: #FFD93D;
   --acc-button-text-size: var(--text-size-lg);
   --acc-panel-text-size: var(--text-size-md);
   

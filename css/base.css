@@ -14,7 +14,7 @@ CSS Variables
 
     /* Link + Button specific */
     --link-color: #103059;
-    --link-hover-color: #3D6976; 
+    --link-hover-color: #276B7D; 
     --link-visited-color: #913D22;
     --button-bg: #FF6B6B;
     --button-hover-bg: var(--link-hover-color);
@@ -142,6 +142,7 @@ button, .btn {
 button:hover, .btn:hover,
 button:focus, .btn:focus {
     background: var(--button-hover-bg);
+    color: #ffffff;
     outline: 2px solid var(--button-hover-bg);
     outline-offset: 2px;
 }
