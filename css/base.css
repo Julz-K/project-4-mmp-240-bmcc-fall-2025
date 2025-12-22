@@ -88,17 +88,22 @@ audio, canvas, iframe, img, svg, video { vertical-align: middle; }
 /* ==========================
 General Styles
 ========================== */
-html { font-size: var(--font-size-base); 
-margin: 0; padding: 0;
+html { 
+  font-size: var(--font-size-base);
+  margin: 0; 
+  padding: 0;
 }
 
-
-html {font-size: 18px;}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: false;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  font-weight: 400;
   line-height: 1.65;
+  font-size: var(--text-size-md);
+  position: relative;
+  color: var(--primary-color);
+  background-color: var(--primary-bg);
 }
 
 p {
@@ -111,7 +116,7 @@ h3,
 h4,
 h5 {
   font-family: 'Poppins', sans-serif;
-  font-weight: true;
+  font-weight: 700;
   line-height: 1.15;
 }
 

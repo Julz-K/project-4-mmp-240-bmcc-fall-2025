@@ -11,47 +11,80 @@ header {
 }
 
 /* ==========================
+Layout: Container
+========================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* ==========================
+Layout: Row and Column Grid
+========================== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.row.row-2 {
+  flex-direction: column;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .row.row-2 {
+    flex-direction: row;
+  }
+
+  .row.row-2 .col {
+    flex: 1 1 calc(50% - 0.75rem);
+  }
+}
+
+/* ==========================
 Responsive Video/Embed Styles
 ========================== */
-.embed-responsive {
+/* Video Embed (youtube or vimeo etc)
+   This CSS creates a responsive video embed container that maintains 
+   the aspect ratio of the video.
+   Use by wrapping your <iframe> embed code in a div with the class "videoWrapper" 
+   and an additional class indicating the aspect ratio, 
+   e.g., "ratio-16-9" or "ratio-4-3".
+*/
+.videoWrapper {
   position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
+  padding-top: 25px;
   height: 0;
   overflow: hidden;
 }
 
-.embed-responsive iframe {
+.videoWrapper.ratio-16-9 {
+  padding-bottom: 56.25%; /* 16:9 */
+}
+
+.videoWrapper.ratio-4-3 {
+  padding-bottom: 75%; /* 4:3 */
+}
+
+.videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
-}
-/* Video Embed (youtube or vimeo etc)
-   ----------------------------------
-   This CSS creates a responsive video embed container that maintains 
-   the aspect ratio of the video.
-   Use by wrapping your <iframe> embed code in a div with the class "videoWrapper" 
-   and an additional class indicating the aspect ratio, 
-   e.g., "ratio-16-9" or "ratio-4-3".
-   
-*/
-.videoWrapper {
-    position: relative;
-    padding-top: 25px;
-    height: 0;
-}
-
-.videoWrapper.ratio-16-9 {
-    padding-bottom: 56.25%;
-    /* 16:9 */
-}
-
-.videoWrapper.ratio-4-3 {
-    padding-bottom: 75%;
-    /* 4:3 */
 }
 
 
@@ -200,7 +233,7 @@ figure img {
 
 .hero-img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 500px;
   width: auto;
   height: auto;
   display: block;
@@ -210,12 +243,12 @@ figure img {
 .hero-img-wrapper {
   position: relative;
   display: block;
-  max-width: 500px;
+  max-width: 900px;
   margin: 1rem auto;
 }
 
 .image-credit {
-  text-align: left;
+  text-align: center;
   margin: 0.5rem 0 0 0;
 }
 
@@ -254,7 +287,7 @@ figure img {
   ========================== */
   footer,
   .site-footer {
-    background: #4D96FF;
+    background: #FFD700;
     margin: 0;
     padding: 1rem;
     color: #1E1E1E;
@@ -285,7 +318,33 @@ Only affects aboutme.html via .page-about
 Card Styles
 ========================== */
 .card {
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 1rem 0;
+  background-color: #4D96FF;
+  color: #1E1E1E;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* ==========================
+Utility Classes
+========================== */
+.responsive-image {
+  border-radius: 8px;
+  max-height: 400px;
+  max-width: 50vw;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.spacing-top {
+  margin-top: 24px;
+}

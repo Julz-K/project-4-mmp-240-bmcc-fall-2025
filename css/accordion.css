@@ -17,7 +17,7 @@
   --acc-accordion-bg: var(--primary-bg);
 
   /* Button-specific tokens (kept, but clearer) */
-  --acc-button-bg: var(--button-bg);x
+  --acc-button-bg: var(--button-bg);
   --acc-button-text-color: var(--button-text-color);
   --acc-button-expanded-bg: var(--accent-color);
   --acc-button-expanded-color: #1E1E1E;
@@ -47,7 +47,7 @@
   border-top: 1px solid var(--acc-item-border-color);
 }
 .accordion-item {
-  margin: 0 var(--acc-accordion-margin); 
+  margin: 0;
 }
 /* Toggle button (header) */
 .accordion-toggle {
@@ -70,12 +70,12 @@
 .accordion-toggle:hover {
   background-color: var(--acc-button-expanded-bg);
   color: var(--acc-button-expanded-color);
+  outline: none;
 }
 
 /* Keep focus very visible and not removed */
 .accordion-toggle:focus-visible {
-  outline: 3px solid var(--acc-button-outline);
-  outline-offset: 2px;
+  outline: none;
 }
 
 /* Expanded state (button has aria-expanded="true") */
