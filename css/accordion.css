@@ -106,32 +106,4 @@
   background-color: var(--acc-panel-bg);
   color: var(--acc-panel-color);
 }
-
-
-
-
-
-    /* Text sizes -----------
-  these are from the following page. You can go there, change the scale used and then copy and paste the CSS variables to replace these
-  https://baseline.is/tools/type-scale-generator/
-  Scale used below: 1.3333 - Perfect Fourth
-   */
-    --text-size-xs: 0.56rem;
-    --text-size-sm: 0.75rem;
-    --text-size-md: 1rem;
-    --text-size-lg: 1.33rem;
-    --text-size-xl: 1.78rem;
-    --text-size-2xl: 2.37rem;
-    --text-size-3xl: 3.16rem;
-    --text-size-4xl: 4.21rem;
-    --text-size-5xl: 5.61rem;
-
-
-    /* ------------------------------- Spacing -----------------------------*/
-    /* this is calculated as multiples of the base font size */
-    --spacing-sm: calc(var(--font-size-base) * 0.5);
-    --spacing-md: calc(var(--font-size-base) * 1);
-    --spacing-lg: calc(var(--font-size-base) * 2);
-    --spacing-xl: calc(var(--font-size-base) * 3);
-    --spacing-2xl: calc(var(--font-size-base) * 4);
-} /* ------------------------------- END :ROOT ----------------------------- */ 
+

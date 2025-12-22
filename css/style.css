@@ -159,7 +159,7 @@ nav { background: var(--clr-nav-background); }
   display: block;
   padding: 1rem;
   text-align: center;
-  color: var(--clr-nav);
+  color: #1E1E1E;
   text-decoration: none;
 }
 
